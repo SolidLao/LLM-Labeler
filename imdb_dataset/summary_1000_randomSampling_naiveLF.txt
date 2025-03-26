@@ -1,0 +1,19 @@
+Processing imdb_dataset of 1000 samples, test percentage is 0.2
+Number of positive samples: 489, negative samples: 511
+LLM direct labeling accuracy (on all data, null → negative): 0.9510
+LLM-generated Labeling Function accuracy (on all data, null → negative): 0.5280
+LLM direct labeling report:
+              precision    recall  f1-score   support
+
+           0     0.9366    0.9824    0.9589       511
+           1     0.9803    0.9296    0.9543       483
+
+    accuracy                         0.9567       994
+   macro avg     0.9585    0.9560    0.9566       994
+weighted avg     0.9578    0.9567    0.9567       994
+
+Model Trained on Ground Truth, Accuracy: 0.8900
+Model Trained on LLM Direct, Accuracy: 0.8100, Token: 302234, 7098, Cost: $0.83
+Model Trained on LLM Direct and Labeling Functions, Accuracy: 0.4900, Token: 18524, 932, 0, 0, Cost: $0.06
+Number of data points labeled by rules: 990
+Number of data points labeled by LLM (in fallback): 10
